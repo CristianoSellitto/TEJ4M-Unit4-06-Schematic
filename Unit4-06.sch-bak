@@ -1,0 +1,172 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery 5V
+U 1 1 6513213A
+P 1500 3750
+F 0 "5V" H 1608 3796 50  0000 L CNN
+F 1 "Battery" H 1608 3705 50  0000 L CNN
+F 2 "" V 1500 3810 50  0001 C CNN
+F 3 "~" V 1500 3810 50  0001 C CNN
+	1    1500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED RED
+U 1 1 65132C60
+P 3350 3100
+F 0 "RED" H 3343 3317 50  0000 C CNN
+F 1 "LED" H 3343 3226 50  0000 C CNN
+F 2 "" H 3350 3100 50  0001 C CNN
+F 3 "~" H 3350 3100 50  0001 C CNN
+	1    3350 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R 220Ω
+U 1 1 651332F8
+P 3500 3250
+F 0 "220Ω" H 3570 3296 50  0000 L CNN
+F 1 "R" H 3570 3205 50  0000 L CNN
+F 2 "" V 3430 3250 50  0001 C CNN
+F 3 "~" H 3500 3250 50  0001 C CNN
+	1    3500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R 1kΩ
+U 1 1 65135428
+P 1800 3550
+F 0 "1kΩ" H 1870 3596 50  0000 L CNN
+F 1 "R" H 1870 3505 50  0000 L CNN
+F 2 "" V 1730 3550 50  0001 C CNN
+F 3 "~" H 1800 3550 50  0001 C CNN
+	1    1800 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C 1mF
+U 1 1 65133A32
+P 2000 3800
+F 0 "1mF" H 2115 3846 50  0000 L CNN
+F 1 "C" H 2115 3755 50  0000 L CNN
+F 2 "" H 2038 3650 50  0001 C CNN
+F 3 "~" H 2000 3800 50  0001 C CNN
+	1    2000 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R 1kΩ
+U 1 1 65136234
+P 2500 3800
+F 0 "1kΩ" H 2570 3846 50  0000 L CNN
+F 1 "R" H 2570 3755 50  0000 L CNN
+F 2 "" V 2430 3800 50  0001 C CNN
+F 3 "~" H 2500 3800 50  0001 C CNN
+	1    2500 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Timer:LM555xM U?
+U 1 1 6513146C
+P 2700 3300
+F 0 "U?" H 2700 3881 50  0000 C CNN
+F 1 "LM555xM" H 2700 3790 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3550 2900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 3550 2900 50  0001 C CNN
+	1    2700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 65261F6A
+P 1850 3300
+F 0 "SW?" H 1850 3585 50  0000 C CNN
+F 1 "SW_SPDT" H 1850 3494 50  0000 C CNN
+F 2 "" H 1850 3300 50  0001 C CNN
+F 3 "~" H 1850 3300 50  0001 C CNN
+	1    1850 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3550 1500 3300
+Wire Wire Line
+	1500 3300 1650 3300
+Wire Wire Line
+	2700 3700 2700 3950
+Wire Wire Line
+	2050 3200 2200 3200
+Wire Wire Line
+	2200 3200 2200 3100
+Wire Wire Line
+	2050 3400 2200 3400
+Wire Wire Line
+	2700 2900 1500 2900
+Wire Wire Line
+	1500 2900 1500 3300
+Connection ~ 1500 3300
+Wire Wire Line
+	3500 3400 3500 3500
+Connection ~ 2700 3950
+Wire Wire Line
+	2700 3950 3500 3950
+Wire Wire Line
+	2200 3400 2200 3500
+Wire Wire Line
+	2200 3300 2100 3300
+Wire Wire Line
+	2000 3650 2100 3650
+Wire Wire Line
+	2100 3300 2100 3650
+Wire Wire Line
+	3200 3500 3500 3500
+Connection ~ 3500 3500
+Wire Wire Line
+	3500 3500 3500 3950
+Connection ~ 2000 3950
+Wire Wire Line
+	2000 3950 1900 3950
+Wire Wire Line
+	2000 3950 2500 3950
+Connection ~ 2500 3950
+Wire Wire Line
+	2500 3950 2700 3950
+Wire Wire Line
+	2200 3200 2200 3250
+Wire Wire Line
+	2200 3250 2050 3250
+Wire Wire Line
+	2050 3250 2050 3350
+Wire Wire Line
+	2050 3350 1800 3350
+Wire Wire Line
+	1800 3350 1800 3400
+Connection ~ 2200 3200
+Wire Wire Line
+	1800 3700 1800 3750
+Wire Wire Line
+	1800 3750 1900 3750
+Wire Wire Line
+	1900 3750 1900 3950
+Connection ~ 1900 3950
+Wire Wire Line
+	1900 3950 1500 3950
+Wire Wire Line
+	2500 3650 2200 3650
+Wire Wire Line
+	2200 3650 2200 3500
+Connection ~ 2200 3500
+$EndSCHEMATC
